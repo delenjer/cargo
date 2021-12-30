@@ -1,0 +1,12 @@
+@mixin flex-items-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-space-between-items-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// @media screen and (max-width: 768px)

@@ -1,0 +1,24 @@
+@import "mixins";
+@import "vars";
+
+.services {
+  @include flex-space-between-items-center;
+
+  &__info {
+    width: 50%;
+    margin-right: 3rem;
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+  }
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+
+    &__info {
+      width: 100%;
+      margin: 0 0 3rem;
+    }
+  }
+}

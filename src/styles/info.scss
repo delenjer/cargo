@@ -1,0 +1,56 @@
+@import "vars";
+@import "mixins";
+
+.info {
+  margin-top: 7.7rem;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 3rem;
+  }
+}
+
+.info-list {
+  @include flex-space-between-items-center;
+
+  &__item {
+    width: 33.3%;
+    background: $white-color;
+    box-shadow: 11px 10px 40px rgba(112, 112, 112, 0.08);
+    padding: 2rem;
+    align-self: stretch;
+    border-radius: 0.8rem;
+
+    &:not(:last-of-type) {
+      margin-right: 3rem;
+    }
+  }
+
+  &__icon {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+    margin-bottom: 1.3rem;
+  }
+
+  &__title {
+    margin-bottom: 0.4rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+
+    &__item {
+      width: 100%;
+
+      &:not(:last-of-type) {
+        margin: 0 0 1rem 0;
+      }
+    }
+
+    &__icon {
+      margin: 0 auto 1.3rem;
+    }
+  }
+}

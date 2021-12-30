@@ -1,0 +1,68 @@
+@import "mixins";
+@import "vars";
+
+:root {
+  --header-height: 7.8rem;
+}
+
+.nav {
+  @include flex-items-center;
+
+  &__link {
+    position: relative;
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.1rem;
+    text-decoration: none;
+    color: $color-bold-text;
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: -0.2rem;
+      left: 0;
+      width: 0;
+      height: 0.2rem;
+      background-color: $color-bold-text;
+      transition: width 0.3s;
+    }
+
+    &:hover {
+      &:before {
+        width: 100%;
+      }
+    }
+
+    &:not(:last-of-type) {
+      margin-right: 3.2rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    background: $white-color;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.2s;
+
+    &__link {
+      &:not(:last-of-type) {
+        margin: 0 0 2rem 0;
+      }
+    }
+
+    &.active-nav {
+      height: 92vh;
+      overflow: visible;
+      opacity: 1;
+      transition: all 0.2s;
+    }
+  }
+}
