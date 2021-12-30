@@ -1,0 +1,77 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem; }
+
+.logo {
+  width: 10.7rem;
+  height: 3.9rem;
+  margin-right: 1rem; }
+
+.logo-icon {
+  display: block;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.wrapper {
+  width: 100%;
+  max-width: 111.0rem;
+  margin: 0 auto;
+  padding: 0 1rem; }
+
+.section {
+  margin-bottom: 20rem; }
+  @media screen and (max-width: 1024px) {
+    .section {
+      margin-bottom: 10rem; } }
+  @media screen and (max-width: 768px) {
+    .section {
+      margin-bottom: 8rem; } }
+
+.h2-title {
+  font-size: 4.8rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #000; }
+  @media screen and (max-width: 1024px) {
+    .h2-title {
+      font-size: 3rem;
+      line-height: 1.2; } }
+
+.h3-title {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #000; }
+  @media screen and (max-width: 1024px) {
+    .h3-title {
+      font-size: 2rem;
+      line-height: 1.2; } }
+
+.h4-title {
+  font-weight: 500;
+  line-height: 1.6rem;
+  color: #DA653E;
+  margin-bottom: 2rem; }
+
+.text {
+  line-height: 1.4;
+  color: #626262; }
+
+.img-wrap {
+  display: block;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+/*# sourceMappingURL=default.css.map */
