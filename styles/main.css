@@ -64,13 +64,13 @@ body {
   margin: 0 auto;
   padding: 0 1rem; }
 
-.section {
+.container {
   margin-bottom: 20rem; }
   @media screen and (max-width: 1024px) {
-    .section {
+    .container {
       margin-bottom: 10rem; } }
   @media screen and (max-width: 768px) {
-    .section {
+    .container {
       margin-bottom: 8rem; } }
 
 .h2-title {
